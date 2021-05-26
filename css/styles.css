@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* 
+GOOGLE FONT FAMILY DETAILS 
+font-family: 'Exo', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/* PAGE DEFAULT */
+body {
+    background-color: rgb(221, 220, 214);
+    background-image: url("../img/60degree_gray.png");
+    padding: 50px 20px 20px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* color: firebrick; */
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+    background-image: url("../img/pinarello_fp3.jpg");
+    background-size: contain;
+    background-position: center;
+    color: rgba(255, 249, 249, 0.687);
+    box-sizing: border-box;
+    text-shadow: 
+        2px 2px 2px black,
+        -2px -2px 2px black,
+        -2px 2px 2px black,
+        2px -2px 2px black;
+    }
+
+h2 {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+    font-size: 50px;
+    text-decoration: underline double;
+}
+h3 {
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 36px;
+}
+a:link {
+    color: rgb(199, 33, 33);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(152, 0, 0);
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+a:active {
+    color: lightcoral;
+}
+/* END OF PAGE DEFAULTS */
+
+/* TOP NAV STYLES */
+
+.topnav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: floralwhite;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+.topnav li {
+    display: inline-block;
+        }
+/* PADDING IN ANKERTAG (a)IS SETTING THE CLICKABLE AREAS WIDER - OTHER THAN PUTTING PADDING TO LI TAG (li)! */
+.topnav a {
+    display: block;
+    padding: 20px;
+    }
+
+.topnav a:link,
+.topnav a:visited {
+    color: rgb(173, 38, 38);
+}
+
+.topnav a:hover, 
+.topnav .currentpage a {
+    background-color: rgb(199, 33, 33);
+    color: white;
+    text-decoration: none;
+}
+
+.topnav .currentpage a {
+    pointer-events: none;
+}
+
+.topnav a:active {
+    color: rgb(98, 10, 10);
+    outline: 1px solid rgb(253, 251, 251);
+    box-shadow: inset 0px 0px 12px rgb(248, 239, 239);
+}
+/* END TOP NAV STYLES */
+
+/* FORM STYLES */
+
+form > div {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted rgb(100, 0, 0);
+}
+
+.label-width {
+    display: inline-block;
+    width: 40%;
+    /* text-align: right; */
+    vertical-align: top;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 50%;
+}
+/* END FORM STYLES */
+
+/* LIST STYLES */
+
+ul {
+    list-style: none;
+  }
+  .storyboard li::before {
+    content: "";
+    background-image: url(../img/envelope.png);
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+  }
+
+
+/* END OF LIST STYLES */
+
+/* SIZE VIDEO TO 4x3 */
+.size-vid {
+    outline: 5px dashed black;
+    margin: 50px 0;
+    padding-top: 56.25%; /* RATIO 4x3 */
+    width: 100%;
+    height: 0;
+    background-color: white;
+}
+
+.center-vid {
+    display: flex;
+    justify-content: center;
+}
+
+/* END SIZE VIDEO TO 4X3 */
+
+/* POSITIONING EXAMPLES */
+.pos-rel {
+    position: relative;
+    bottom: 245px;
+    left: 270px;
+    outline: 2px dashed red;
+    background-color: rgba(98, 10, 10, 0.222);
+}
+
+.pos-fixed {
+    position: fixed;
+    bottom: 4px; 
+    right: 40%;
+    border-radius: 30px;
+    padding: 1px 20px;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    background-color: rgba(233, 15, 15, 0.17);
+}
+
+.pos-abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -10; */
+    outline: 2px solid green;
+    background-color: rgba(0, 128, 0, 0.224);
+}
+
+.positioned-rel {
+    position: relative;
+    outline: 2px solid purple;
+    background-color: rgba(128, 0, 128, 0.772);
+}
+
+
+.popup-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(223, 39, 39);
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.489);
+}
+
+/* DO NOT USE - NOT ALL THE BROWSERS WILL SUPPORT */
+.pos-sticky {
+    position: sticky;
+    top: 193px;
+    outline: 2px solid rgb(0, 0, 0);
+    background-color: rgba(255, 8, 0, 0.598);
+}
+
+
+/* END OF POSITIONING EXAMPLES */
+
+
+/* TABLE STYLES */
+
+th {
+    font-size: 14px;
+    text-align: left;
+    padding: 13px;
+    background-color: rgba(89, 101, 137, 0.279);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+td {
+    text-align: center;
+    font-size: 12px;
+}  
+
+table.red {
+    border: 3px solid rgb(137, 41, 41);
+    border-collapse: collapse;
+}
+table.red th {
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+}
+table.red td {
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+}
+table.red tr:nth-child(odd) 
+    {background-color: rgb(223, 176, 176);
+}
+
+table.red tr:hover {
+    background-color: rgba(255, 0, 0, 0.442);
+    color:rgba(0, 0, 0, 0.79);
+}
+
+table.blue {
+    border: 3px solid rgb(41, 49, 137);
+    border-collapse: collapse;
+}
+table.blue th {
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+}
+table.blue td {
+    border-bottom: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+}
+table.blue tr:nth-child(odd) 
+    {background-color: rgb(176, 180, 223);
+}
+table.blue tr:hover {
+    background-color: rgba(0, 21, 255, 0.442);
+    color:rgba(0, 0, 0, 0.79);
+}
+
+table.white {
+    border: 3px solid rgb(3, 12, 11);
+    border-collapse: collapse;
+}
+table.white th {
+    border-bottom: 2px solid rgb(86, 86, 86);
+    border-left: 2px solid rgb(86, 86, 86);
+}
+table.white td {
+    border-bottom: 2px solid rgb(86, 86, 86);
+    border-left: 2px solid rgb(86, 86, 86);
+}
+table.white tr:nth-child(odd) 
+    {background-color: rgb(221, 221, 221);
+}
+
+table.white tr:hover {
+    background-color: rgba(229, 255, 0, 0.442);
+    color:rgba(0, 0, 0, 0.79);
+}
+
+/* FLEX CONTAINER */
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child-table {
+    flex: 1;
+}
+
+.flex-child-table:first-child {
+    margin-right: 20px;
+} 
+/* END OF FLEX CONTAINER */
+/* END OF TABLE STYLES */
+
+
+/* IMAGE STYLE AND FLOATIMG EXAMPLE */
+
+.side-img {
+    float: right;
+    width: 50%;
+}
+
+.img-right {
+    float: right;
+    margin-left:20px;
+}
+
+.img-left {
+    float: left;
+    margin-right:20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*  END IMAGE STYLE AND FLOATIMG EXAMPLE */
+
+/* HOVER OVER IMAGE POSITIONS */
+.pos-rel:hover {
+    background-color: rgba(255, 0, 0, 0.564);
+}
+
+/* END OF HOVER OVER IMAGE POSITIONS */
+
+/* SEVERAL IMAGES ACROSS CONTAINER */
+.space-images-out .gallery-img {
+    float: left;
+    /* CALCULATE A VALUE USING THE "CALC" FUNCTION */
+    width: calc(100% / 5);
+    height: 0;
+    padding-top: 50%;
+    background-image: url("../img/Garmin-830.jpg");
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid rgb(231, 231, 231);
+    box-sizing: border-box;
+}
+/* END SEVERAL IMAGES ACROSS CONTAINER */
